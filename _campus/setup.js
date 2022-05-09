@@ -1,6 +1,6 @@
 let answerArr = [];
 
-function output(...args){
+const output = (...args) => {
 	console.log.call(this,...args);
 	answerArr.push(args[0]);
 }
