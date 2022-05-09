@@ -3,11 +3,14 @@
     "project": "fizzbuzz",
     "licence": "MIT LICENSE",
     "action": {
-        "test": {
-            "skip": false,
-            "setup": "_campus/setup.js",
-            "entry": "_campus/test.js"
-        },
+        "test": [
+            {
+                "skip": false,
+                "setupFile": "_campus/setup.js",
+                "testFiles": ["_campus/test.js"]
+                "main": "fizzbuzz.js"
+            }
+        ],
         "deploy": {
             "skip": true,
             "notify_on_fail": true
@@ -15,5 +18,5 @@
         "submission": { "skip": false }
     },
     "permission_request": [],
-    "thorVersion": "2.0.0"
+    "thorVersion": "3.0.0"
 }
